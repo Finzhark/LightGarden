@@ -28,9 +28,9 @@ function ForgotPasswordPage () {
       {({ errors, touched, isSubmitting}) => {
         return (
           <div className="container">
-            <div className="form card w-4/12 bg-base-100 shadow-xl py-4">
+            <div className="form card w-4/12 bg-slate-200 shadow-xl py-4">
               <Form>
-                <h1>Forgot Password</h1>
+                <h1 className="font-bold">Forgot Password</h1>
                 <div className="form-row mt-7">
                   <label htmlFor="email">Email</label>
                   <Field

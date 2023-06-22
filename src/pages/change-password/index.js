@@ -38,9 +38,9 @@ function ChangePasswordPage () {
         {({ errors, touched }) => {
             return (
             <div className="container">
-                <div className="form card w-4/12 bg-base-100 shadow-xl py-4">
+                <div className="form card w-4/12 bg-slate-200 shadow-xl py-4">
                     <Form>
-                    <h1>Change Password</h1>
+                    <h1 className="font-bold">Change Password</h1>
                     <div className="form-row mt-7">
                         <label>Old Password</label>
                         <div className="form-row-pass">

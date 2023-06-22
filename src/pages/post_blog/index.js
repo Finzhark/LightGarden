@@ -109,9 +109,9 @@ function PublishBlog () {
         {({ errors, touched}) => {
             return (
                 <div className="container pb-10">
-                    <div className="form card w-4/12 bg-base-100 shadow-xl">
+                    <div className="form card w-4/12 bg-slate-200 shadow-xl ">
                         <Form>
-                        <h1>Create a Blog</h1>
+                        <h1 className="font-bold">Create a Blog</h1>
                         <div className="form-row mt-5">
                             <label>Title</label>
                             <Field

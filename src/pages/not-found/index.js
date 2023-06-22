@@ -14,13 +14,13 @@ function NotFoundPage () {
                 </div>
                 
                 <div class="contant_box_404">
-                <h3 class="h2">
+                <h3 className="font-bold">
                 Look like you're lost
                 </h3>
                 
-                <p>the page you are looking for not avaible!</p>
+                <p className="font-bold">the page you are looking for not avaible!</p>
                 
-                <a href="" class="link_404">Go to Home</a>
+                <a href="/" className="link_404 font-bold btn-neutral border border-none rounded-md">Go to Home</a>
             </div>
                 </div>
                 </div>

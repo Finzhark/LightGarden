@@ -55,9 +55,9 @@ function LoginPage () {
     {({ errors, touched,isSubmitting}) => {
       return (
         <div className="container ">
-          <div className="form card w-2/5 bg-base-100 shadow-xl py-4 ">
+          <div className="form card w-2/5 bg-slate-200 shadow-xl py-4 ">
             <Form>
-            <h1 >Log in</h1>
+            <h1 className="font-bold">Log In</h1>
               <div className="form-row mt-5">
                 <label>Username or email or phone</label>
                 <Field
@@ -111,13 +111,13 @@ function LoginPage () {
                 </button>
               <div/>
               
-                <div className="my-15">Not a member?{' '}
+                <div className="mt-10">Not a member?{' '}
                 <button
                     type="button"
-                    className="link link-hover "
+                    className="link link-hover font-bold"
                     onClick={()=>navigate("/register")}
                 >
-                    Register
+                    Join now!
                 </button>
                 </div>
                 

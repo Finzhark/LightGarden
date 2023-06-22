@@ -93,7 +93,7 @@ export default function DashboardPage () {
                     ? 
                         <div className="flex flex-col w-full h-1/3 px-10">
                             <div 
-                                className="btn bg-white btn-lg justify-center place-self-center hover:bg-blue-500 hover:text-white hover:scale-110 cursor-pointer"
+                                className="btn bg-white btn-lg justify-center place-self-center btn-neutral hover:scale-110 cursor-pointer"
                                 onClick={() =>{navigate("/post-blog")}}
                             >
                                 Ready to write a blog?
@@ -103,7 +103,7 @@ export default function DashboardPage () {
                         <div className="overflow-x-auto px-7">
                             <a
                                 onClick={() =>{navigate("/post-blog")}}
-                                className="text-[14pt] btn bg-white hover:bg-blue-500 hover:text-white hover:scale-110 cursor-pointer"
+                                className="text-[14pt] btn btn-neutral hover:text-white hover:scale-110 cursor-pointer"
                             >
                                 {writeIcon} I'm ready to write a blog 
                             </a> 

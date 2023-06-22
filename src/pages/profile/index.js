@@ -93,10 +93,10 @@ const ProfileUser = () => {
     >
       {({ errors, touched,}) => {
         return (
-          <div className="container pb-8 min-h-screen">
-            <div className="form card w-4/12 bg-base-100 shadow-xl">
+          <div className="container pb-8 min-h-screen ">
+            <div className="form card w-4/12 bg-slate-200 shadow-xl">
               <Form >
-              <h1>My Profile</h1>
+              <h1 className="font-bold ">My Profile</h1>
               <h5>Feel to change?</h5>
               <div className="avatar flex flex-row justify-center align-middle mt-7">
                 <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">

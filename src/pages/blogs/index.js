@@ -121,8 +121,8 @@ function LandingPage () {
                                     type="checkbox" 
                                     onClick={sortingChange}
                                 />
-                                <div className="swap-on text-bold btn bg-slate-200">Sort A to Z</div>
-                                <div className="swap-off text-bold btn bg-slate-200">Sort Z to A</div>
+                                <div className="swap-on text-bold btn bg-slate-200">Sort Z to A</div>
+                                <div className="swap-off text-bold btn bg-slate-200">Sort A to Z</div>
                             </label>
                         </div>
                         <select 
