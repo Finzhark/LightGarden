@@ -22,7 +22,7 @@ function ExploreAllBlogs ({
     const id = localStorage.getItem("token")
     return (
 
-        <div className="card card-side w-[99%] border border-slate-300 rounded-xl drop-shadow-sm hover:bg-slate-200 hover:border-gray-300">
+        <div className="card card-side w-[99%] border border-slate-300 rounded-xl drop-shadow-sm hover:shadow-lg hover:bg-slate-200 hover:border-gray-200 hover:-translate-y-1">
             
             <img 
                 src={process.env.REACT_APP_IMAGE_URL + thumbnail} 

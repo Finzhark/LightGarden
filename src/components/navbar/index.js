@@ -36,7 +36,7 @@ export default function Navbar () {
 			<li><a onClick={() =>{navigate("/post-blog")}}>Write now</a></li>
 		</ul> */}
 		</div>
-		<a className="link link-hover normal-case text-[28pt] font-bold" onClick={() =>{navigate("/")}}>Light Garden</a>
+		<a className="link link-hover normal-case text-[28pt] font-bold hover:scale-105" onClick={() =>{navigate("/")}}>Light Garden</a>
 	</div>
 	{/* <div className="navbar-center hidden lg:flex">
 		<ul className="menu menu-horizontal px-1">

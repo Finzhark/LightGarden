@@ -32,23 +32,23 @@ function MyBlogCard ({
             <td>
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
-                    <div className="mask mask-squircle w-12 h-12">
+                    <div className="mask mask-circle w-20 h-20">
                         <img src={process.env.REACT_APP_IMAGE_URL + thumbnail} />
                     </div>
                     </div>
                 </div>
             </td>
             <td>
-                <div className="font-bold">{title}</div>
+                <div className="font-bold ">{title}</div>
             </td>
             
-            <td className="break-all w-1/2 ">
+            <td className="break-all w-5/12 ">
                 {content}
             </td>
             
-            <td>{category}</td>
+            <td className="italic">{category}</td>
             
-            <th className="break-all w-[10%]" >
+            <th className="break-all w-[15%]" >
                 <button 
                     className={`btn btn-outline btn-error btn-xs  ${deleting ? "hidden" : ""}`} 
                     onClick={()=>deleteConfirm(true)}
@@ -61,7 +61,7 @@ function MyBlogCard ({
                     </p>
                     <br/>
                     <button 
-                        className="btn btn-error btn-xs pr-2"
+                        className="btn btn-error btn-xs pr-2 hover:scale-105"
                         onClick={()=>{
                             onButtonDelete(BlogId)
                             deleteConfirm(false)
@@ -71,7 +71,7 @@ function MyBlogCard ({
                     </button>
 
                     <button 
-                        className="link link-hover pl-2"
+                        className="hover:scale-110 pl-2"
                         onClick={()=>deleteConfirm(false)}
                     >
                         Cancel
