@@ -38,7 +38,7 @@ export default function DashboardPage() {
 
   return (
     <div className="flex flex-col flex-wrap gap-5 pt-10 w-full mt-10">
-      <div className="text-bold text-[40pt] text-center">Hello, {username}</div>
+      <div className="text-bold text-[40pt] text-center">Hello, {username}!</div>
       <div className="text-center text-[18pt]">This is your dashboard page.</div>
 
       <div className="flex gap-5 pt-10 w-full mt-2">
@@ -88,7 +88,7 @@ export default function DashboardPage() {
                 }}
                 className="text-[14pt] btn btn-neutral hover:text-white hover:scale-110 cursor-pointer"
               >
-                {writeIcon} I'm ready to write a blog
+                <div className="justify-center place-self-center">{writeIcon} I'm ready to write a blog! </div>
               </a>
               <table className="table">
                 <thead>
