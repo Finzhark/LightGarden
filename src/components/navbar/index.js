@@ -2,12 +2,12 @@ import { useDispatch, useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
 import { logout } from "../../store/slices/auth/slices"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUser } from "@fortawesome/free-solid-svg-icons"
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons"
 
 export default function Navbar () {
 	const dispatch = useDispatch()
 	const navigate = useNavigate()
-	const userAvatar = <FontAwesomeIcon icon={faUser} />
+	const userAvatar = <FontAwesomeIcon icon={faCircleUser} size="2xl"/>
 
 	const { username } = useSelector(state => {
         return {
@@ -55,7 +55,7 @@ export default function Navbar () {
 						tabIndex={0} 
 						className="flex flex-col btn btn-ghost btn-circle avatar placeholder"
 					>
-						<div className="bg-neutral-focus text-neutral-content rounded-full w-12">
+						<div className="bg-neutral-focus text-neutral-content rounded-full w-11">
 							<span>{userAvatar}</span>
 						</div>
 					</label>

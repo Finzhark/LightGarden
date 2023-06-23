@@ -91,7 +91,7 @@ function LandingPage () {
     }
     if(isLogoutLoading) return (
         <div className="h-screen w-screen flex flex-col align-middle">
-            <span className="loading loading-dots loading-lg"/>
+            <span className="loading loading-infinity loading-lg"/>
         </div>
     )
 
@@ -150,12 +150,12 @@ function LandingPage () {
                             {
                                 valueCategory?.name == "allCategory" || valueCategory?.name == "" 
                                 ? <RenderSidebarCategories/>
-                                : `Top 10 Popular Articles of ${valueCategory?.name}`
+                                : <div className="text-center font-bold"> Top 10 Popular Articles of {valueCategory?.name}</div>
                             } 
                         </a>
                         {loadingTop10
                             ?   <div>
-                                    <span className="loading loading-spinner loading-md"></span>
+                                    <span className="loading loading-infinity loading-md"></span>
                                 </div>
                             :   <RenderTop10Articles top10_fav={top10_fav}/>
                         }
@@ -168,7 +168,7 @@ function LandingPage () {
                      {loading 
                      ? 
                          <div className="h-screen w-screen flex flex-col align-middle">
-                             <span className="loading loading-dots loading-lg"></span>
+                             <span className="loading loading-infinity loading-lg"></span>
                          </div>
                      :
                         <RenderExploreAllBlogs articles={articles} />
