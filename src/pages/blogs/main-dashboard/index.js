@@ -72,7 +72,7 @@ export default function DashboardPage() {
           {filteredArticles.length === 0 ? (
             <div className="flex flex-col w-full h-1/3 px-10">
               <div
-                className="btn bg-white btn-lg justify-center place-self-center btn-neutral hover:scale-110 cursor-pointer"
+                className="btn text-black bg-slate-200 btn-lg justify-center place-self-center btn-neutral hover:text-white hover:scale-110 cursor-pointer"
                 onClick={() => {
                   navigate("/post-blog")
                 }}
