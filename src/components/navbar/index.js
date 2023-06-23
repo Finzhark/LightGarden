@@ -47,7 +47,7 @@ export default function Navbar () {
 					?""
 					:
 						<div className="text-[18pt] pr-5">
-							Hello, <i>{username}</i>
+							Hello, <i>{username}</i>.
 						</div>
 				}
 				<div className="dropdown dropdown-end">
