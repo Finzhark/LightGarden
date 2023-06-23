@@ -77,7 +77,7 @@ export default function DashboardPage() {
                   navigate("/post-blog")
                 }}
               >
-                Ready to write a blog?
+                {writeIcon} Ready to write a blog?
               </div>
             </div>
           ) : (
