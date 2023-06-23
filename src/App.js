@@ -33,7 +33,7 @@ function App() {
 
 	if (isKeepLoginLoading) return (
 		<div className="h-screen w-screen flex flex-row align-bottom justify-center">
-			<span className="loading loading-spinner loading-md"></span>
+			<span className="loading loading-infinity loading-md"></span>
 		</div>
 	)
 	

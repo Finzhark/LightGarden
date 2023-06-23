@@ -178,7 +178,7 @@ function RegisterPage () {
                         disabled={isSubmitting || isRegisterLoading}
                         onClick={onButtonRegister}
                     >
-                        { isSubmitting || isRegisterLoading ?  <span className="loading loading-spinner"></span> : null }
+                        { isSubmitting || isRegisterLoading ?  <span className="loading loading-infinity"></span> : null }
                         Register
                     </button>
                     </Form>

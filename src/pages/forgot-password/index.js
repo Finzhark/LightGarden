@@ -57,7 +57,7 @@ function ForgotPasswordPage () {
                   disabled={isSubmitting || isForgotLoading}
                   onClick={onButtonSendLink}
                 >
-                  { isSubmitting || isForgotLoading ?  <span className="loading loading-spinner"></span> : null }
+                  { isSubmitting || isForgotLoading ?  <span className="loading loading-infinity"></span> : null }
                   Send Link Reset Password 
                 </button>
               </Form>

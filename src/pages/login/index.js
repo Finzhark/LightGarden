@@ -106,7 +106,7 @@ function LoginPage () {
                   disabled={isSubmitting || loading}
                   onClick={onButtonLogin}
                 >
-                  { isSubmitting || loading ?  <span className="loading loading-spinner"></span> : null }
+                  { isSubmitting || loading ?  <span className="loading loading-infinity"></span> : null }
                   Login
                 </button>
               <div/>
