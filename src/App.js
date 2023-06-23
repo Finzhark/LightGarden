@@ -40,7 +40,7 @@ function App() {
 	return (
 		<div className=" w-full h-[900px] px-40">
             <Navbar/>
-			<Toaster/>
+			
 			<Routes>
 				<Route 
 					path="/change-password" 
@@ -86,6 +86,8 @@ function App() {
 				<Route path="/forgot-password" element={<ForgotPasswordPage />} />
 				<Route path="/reset-password/:token" element={<ResetPasswordPage />} />
 			</Routes>
+
+			<Toaster/>
 		</div>
 	);
 }

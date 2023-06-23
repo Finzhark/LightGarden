@@ -26,6 +26,7 @@ function NewBlog ({
                 <img 
                     src={process.env.REACT_APP_IMAGE_URL + thumbnail} 
                     className="rounded-lg" 
+                    alt="pic"
                 />
             </figure>
             <div className="card-body">
@@ -37,6 +38,7 @@ function NewBlog ({
                 <div className="avatar">
                     <div className="w-5 rounded-xl">
                         <img src={(!{userProfile}) ? "by" : {userProfile}}
+                            alt="pic"
                         />
                     </div>
                 </div>

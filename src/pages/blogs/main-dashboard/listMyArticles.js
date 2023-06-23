@@ -33,7 +33,7 @@ function MyBlogCard ({
                 <div className="flex items-center space-x-3">
                     <div className="avatar">
                     <div className="mask mask-circle w-20 h-20">
-                        <img src={process.env.REACT_APP_IMAGE_URL + thumbnail} />
+                        <img src={process.env.REACT_APP_IMAGE_URL + thumbnail} alt="pic" />
                     </div>
                     </div>
                 </div>

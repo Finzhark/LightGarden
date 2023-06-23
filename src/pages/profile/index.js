@@ -100,7 +100,7 @@ const ProfileUser = () => {
               <h5>Feel to change?</h5>
               <div className="avatar flex flex-row justify-center align-middle mt-7">
                 <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src={process.env.REACT_APP_IMAGE_URL + imgProfile} />
+                  <img src={process.env.REACT_APP_IMAGE_URL + imgProfile} alt="pic" />
                 </div>
               </div>
               <br/>
@@ -137,7 +137,7 @@ const ProfileUser = () => {
                         <div className='flex flex-col h-auto drop-shadow-lg p-5 justify-between bg-white w-full rounded-md'>
                             <div  {...getRootProps({className :`h-auto] w-full bg-light-grey ${isDragActive ? 'border-amber-950':'border-light-blue'} border-2 border-dashed rounded-md`})}>
                               <input {...getInputProps({name : 'image'})}/>
-                              <img src={bgimage} className='max-w-1/3 mx-auto mt-4' />
+                              <img src={bgimage} className='max-w-1/3 mx-auto mt-4' alt="pic" />
                               <p 
                                 className='text-slate-400 md:text-md text-md text-center mt-2 mb-4 '
                               >

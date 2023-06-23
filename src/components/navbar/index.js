@@ -8,9 +8,6 @@ export default function Navbar () {
 	const dispatch = useDispatch()
 	const navigate = useNavigate()
 	const userAvatar = <FontAwesomeIcon icon={faUser} />
-	// const userAvatar = () => {
-	// 	id === "undefined" || !id ? <FontAwesomeIcon icon={faUser}/> : {imgProfile}
-	// }
 
 	const { username } = useSelector(state => {
         return {

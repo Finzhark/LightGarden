@@ -27,6 +27,7 @@ function ExploreAllBlogs ({
             <img 
                 src={process.env.REACT_APP_IMAGE_URL + thumbnail} 
                 className="rounded-lg w-[30%] object-cover mx-3 my-3" 
+                alt="pic"
             />
             <div className="card-body">
                 <div className="badge badge-outline rounded-md">
