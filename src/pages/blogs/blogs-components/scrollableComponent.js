@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import RenderFavoriteBlogs from './favoriteBlogs';
+import RenderTop10NewArticles from './Top10NewArticles';
 
 const ScrollableComponent = ({
     disabledPrev = false,

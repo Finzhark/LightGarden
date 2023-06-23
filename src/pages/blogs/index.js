@@ -4,7 +4,7 @@ import { getArticles} from "../../store/slices/blogs/slices"
 import { getCategories } from "../../store/slices/blogs/getCategory/slices"
 import { getFavBlogs } from "../../store/slices/blogs/favBlogs/slices"
 import { getLikedArticles } from "../../store/slices/blogs/myLikedArticles/slices"
-import RenderFavoriteBlogs from "./blogs-components/favoriteBlogs"
+import RenderTop10NewArticles from "./blogs-components/bannerTop10NewArticles"
 import RenderCategoryBlogs from "./blogs-components/categoryBlogs"
 import RenderExploreAllBlogs from "./blogs-components/listArticles"
 import RenderTop10Articles from "./blogs-components/top10Articles"
@@ -27,8 +27,8 @@ function LandingPage () {
             currentPage : state.blogs.currentPage,
             totalPage : state.blogs.totalPage,
             username : state.auth.username,
-            categories : state.category.categories,
             favorites : state.favorites.favorites,
+            categories : state.category.categories,
             top10_fav :state.favorites.top10,
             loadingTop10 : state.favorites.isLoading,
             sideCat : state.blogs.sideCat,
@@ -107,7 +107,7 @@ function LandingPage () {
                 <div className="border rounded-lg border-black w-2/3 mb-5"/>
             </div>
 
-            <RenderFavoriteBlogs favorites={favorites}/>
+            <RenderTop10NewArticles favorites={favorites}/>
             
             <div className="flex flex-col flex-wrap gap-5 justify-between py-20">
                 <h2 className="text-2xl font-bold place-self-center flex-wrap">
